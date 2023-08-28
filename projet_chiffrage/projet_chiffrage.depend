@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1693235622 source:c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\chiffrage.c
+	"entete.h"
+	<stdlib.h>
+	<stdio.h>
+
+1693235824 c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\entete.h
+	<stdio.h>
+	<stdlib.h>
+
+1693235830 source:c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\dechiffrage.c
+	"entete.h"
+	<stdlib.h>
+	<stdio.h>
+
+1693236858 source:c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\main.c
+	<stdlib.h>
+	<stdio.h>
+	"entete.h"
+
+1693237122 source:c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\ecrire.c
+	"entete.h"
+	<stdlib.h>
+	<stdio.h>
+
