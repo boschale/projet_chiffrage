@@ -55,7 +55,6 @@ void dechiffreSource(void)
         {
            printf("\n\tFichier Fini !!!");
         }
-        //fseek(perroq, )
         fread(&perroq, sizeof(perroq), sizeof(char), fpp);
         printf("lettre perroq : %c\n", perroq);
         result = (source - perroq) % 128;
