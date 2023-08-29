@@ -31,6 +31,22 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="chiffrage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dechiffrage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ecrire.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="entete.h" />
+		<Unit filename="lecture.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -3,11 +3,11 @@
 void lireFichier(void)
 {
 
-    FILE *fp = NULL;
-    char source = "abcd";
+    FILE *fps = NULL;
+    char source;
 
-    fp = fopen("sources.txt", "rt");
-    if (fp == NULL)
+    fps = fopen("sources.txt", "rt");
+    if (fps == NULL)
     {
         printf("Erreur Open !");
         return EXIT_FAILURE;
@@ -17,24 +17,23 @@ void lireFichier(void)
     //fseek(fp, 5, SEEK_SET);   //Décalage de 5 à partir du début du fichier
     //fseek(fp, -5, SEEK_END);    //Décalage de 5 à partir de la fin de fichier
 
-    fread(&source, sizeof(source), sizeof(char), fp);
-    if (feof(fp))
+    fread(&source, sizeof(source), sizeof(char), fps);
+    if (feof(fps))
     {
         printf("\nFichier Vide !!!");
     }
 
     //Tant que la fin de fichier n'a pas été détectée
-    while(!feof(fp))
+    while(!feof(fps))
     {
         printf("\nsource : %c", source);
-        fread(&source, sizeof(source), sizeof(char), fp);
-        if (feof(fp))
+        fread(&source, sizeof(source), sizeof(char), fps);
+        if (feof(fps))
         {
            printf("\n\tFichier Fini !!!");
         }
     }
-
-    int retClose = fclose(fp);
+    int retClose = fclose(fps);
     if (retClose!= 0)
     {
         printf("Erreur Open !");

@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-
 void ecrirePerroquet(void)
 {
     FILE *fp = NULL;
@@ -14,11 +13,12 @@ void ecrirePerroquet(void)
         return EXIT_FAILURE;
     }
 
-    char perroquet;
+    char perroquet[10];
     printf("Entrez le perroquet\n");
-    scanf(" %c", &perroquet);
+    scanf(" %s", &perroquet);
 
     fwrite(&perroquet, sizeof(perroquet), 1, fp);
+    printf("perroquet : %s\n", perroquet);
 
     int retClose = fclose(fp);
     if (retClose!= 0)

@@ -2,43 +2,44 @@
 #include <stdio.h>
 #include "entete.h"
 
-int affichageMenu(void)
-{
-    int choixMenu;
-
-    while (choixMenu !=0)
-    {
-        printf("---Menu---\n\n");
-        printf("1.Definir le perroquet\n");
-        printf("2.Dechiffrer le mot source\n");
-        printf("3.Chiffrer le mot source\n");
-        printf("\nVotre choix?\n\n");
-        scanf("%d", &choixMenu);
-        return choixMenu;
-    }
-
-}
 int main(void)
 {
-    switch (affichageMenu())
+    int choixMenu;
+    do
+    {
+        printf("---Menu---\n\n");
+        printf("0. quitter le menu \n");
+        printf("1.Definir le perroquet\n");
+        printf("2.Dechiffrer le fichier source\n");
+        printf("3.Chiffrer le fichier source\n");
+        printf("\nVotre choix?\n\n");
+        scanf("%d", &choixMenu);
+        fflush(stdin);
+
+    switch (choixMenu)
     {
     case 0:
         break;
     case 1:
         ecrirePerroquet();
+        system("PAUSE");
         break;
     case 2:
+        lireFichier();
         dechiffreSource();
+        system("PAUSE");
         break;
     case 3:
+        lireFichier();
         chiffreSource();
+        system("PAUSE");
         break;
     default:
         printf("error");
         break;
     }
-
-    system("PAUSE");
+    }
+    while (choixMenu !=0);
     return 0;
 }
 
