@@ -1,13 +1,13 @@
 #include "entete.h"
 
-void lireSource(void)
+void lirePerroquet(void)
 {
 
-    FILE *fps = NULL;
-    char source;
+    FILE *fpp = NULL;
+    char perroq;
 
-    fps = fopen("sources.txt", "rt");
-    if (fps == NULL)
+    fpp = fopen("peroq.def", "rt");
+    if (fpp == NULL)
     {
         printf("Erreur Open !");
         return EXIT_FAILURE;
@@ -17,28 +17,29 @@ void lireSource(void)
     //fseek(fp, 5, SEEK_SET);   //Décalage de 5 à partir du début du fichier
     //fseek(fp, -5, SEEK_END);    //Décalage de 5 à partir de la fin de fichier
 
-    fread(&source, sizeof(source), sizeof(char), fps);
-    if (feof(fps))
+    fread(&perroq, sizeof(perroq), sizeof(char), fpp);
+    if (feof(fpp))
     {
         printf("\nFichier Vide !!!");
     }
 
     //Tant que la fin de fichier n'a pas été détectée
-    while(!feof(fps))
+    while(!feof(fpp))
     {
-        printf("\nlettre : %c", source);
-        fread(&source, sizeof(source), sizeof(char), fps);
-        if (feof(fps))
+        printf("\nlettre : %c", perroq);
+        fread(&perroq, sizeof(perroq), sizeof(char), fpp);
+        if (feof(fpp))
         {
            printf("\n\tFichier Fini !!!");
         }
     }
-    int retClose = fclose(fps);
+    int retClose = fclose(fpp);
     if (retClose!= 0)
     {
         printf("Erreur Open !");
         return EXIT_FAILURE;
     }
 }
+
 
 

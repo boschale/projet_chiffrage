@@ -1,28 +1,34 @@
 # depslib dependency file v1.0
-1693298177 source:c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\chiffrage.c
+1693309241 source:c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\chiffrage.c
 	"entete.h"
 	<stdlib.h>
 	<stdio.h>
 
-1693235824 c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\entete.h
+1693305896 c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\entete.h
 	<stdio.h>
 	<stdlib.h>
 
-1693298177 source:c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\dechiffrage.c
+1693315292 source:c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\dechiffrage.c
 	"entete.h"
 	<stdlib.h>
 	<stdio.h>
 
-1693303740 source:c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\main.c
+1693306183 source:c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\main.c
 	<stdlib.h>
 	<stdio.h>
 	"entete.h"
 
-1693302004 source:c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\ecrire.c
+1693314883 source:c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\ecrire.c
 	"entete.h"
 	<stdlib.h>
 	<stdio.h>
 
-1693303599 source:c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\lecture.c
+1693306056 source:c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\lecture.c
+	"entete.h"
+
+1693306649 source:c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\lireperroquet.c
+	"entete.h"
+
+1693308945 source:c:\users\alexb\documents\poei_astek\projet_c\projet_chiffrage\liresource.c
 	"entete.h"
 

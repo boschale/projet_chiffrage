@@ -22,15 +22,14 @@ int main(void)
         break;
     case 1:
         ecrirePerroquet();
+        lirePerroquet();
         system("PAUSE");
         break;
     case 2:
-        lireFichier();
         dechiffreSource();
         system("PAUSE");
         break;
     case 3:
-        lireFichier();
         chiffreSource();
         system("PAUSE");
         break;

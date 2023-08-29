@@ -39,6 +39,7 @@ void lireSource(void)
         printf("Erreur Open !");
         return EXIT_FAILURE;
     }
+    printf("%c", source);
 }
 
 

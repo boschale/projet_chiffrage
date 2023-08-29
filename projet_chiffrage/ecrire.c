@@ -13,12 +13,12 @@ void ecrirePerroquet(void)
         return EXIT_FAILURE;
     }
 
-    char perroquet[10];
+    char perroquet[7];
     printf("Entrez le perroquet\n");
     scanf(" %s", &perroquet);
 
     fwrite(&perroquet, sizeof(perroquet), 1, fp);
-    printf("perroquet : %s\n", perroquet);
+    //printf("perroquet : %s\n", perroquet);
 
     int retClose = fclose(fp);
     if (retClose!= 0)

@@ -17,5 +17,8 @@ struct art
 void ecrirePerroquet(void);
 void dechiffreSource(void);
 void chiffreSource(void);
+void lirePerroquet(void);
+void lireSource(void);
+
 
 #endif // ENTETE_INCLUDED
